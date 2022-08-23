@@ -5,16 +5,16 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import HornedBeast from "./components/HornedBeast";
 
-class App extends React.Component{
-  render(){
-    return(
+class App extends React.Component {
+  render() {
+    return (
       <div className="App">
-        <Header></Header>
-        <Main></Main>
+        <Header />
+        <Main />
         {/* <HornedBeast></HornedBeast> */}
-        <Footer></Footer>
+        <Footer />
       </div>
-    )
+    );
   }
 }
 
