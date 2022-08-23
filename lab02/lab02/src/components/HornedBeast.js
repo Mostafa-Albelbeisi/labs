@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -22,10 +21,8 @@ class HornedBeast extends React.Component {
   render() {
     return (
 
-        <Row xs={1} md={2} className="g-4">
-        {Array.from({ length: 2 }).map((_, main) => (
           <Col>
-            <Card>
+            <Card style={{ width: '18rem' }}>
                <Card.Img variant="top" src={this.props.image_url} onClick = {this.incrementNumOfPets} />
               <Card.Body>
               <Card.Text>
@@ -40,8 +37,7 @@ class HornedBeast extends React.Component {
               </Card.Body>
             </Card>
           </Col>
-        ))}
-      </Row>
+        
     
 
         //   <Card style={{ width: '18rem' }}>
